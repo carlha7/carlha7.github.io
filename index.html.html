@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carla Carvallo — Portafolio de Desarrollo</title>
+<style>
+:root{
+  --tinta:#1d2b2a;
+  --verde:#0a7d63;
+  --verde-hondo:#075c48;
+  --arena:#f4f1ea;
+  --papel:#ffffff;
+  --gris:#5c6866;
+  --linea:#e3ddd0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--tinta);
+  background:var(--arena);
+  line-height:1.6;
+}
+a{color:var(--verde-hondo);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+
+header{
+  background:var(--papel);
+  border-bottom:1px solid var(--linea);
+  position:sticky;top:0;z-index:10;
+}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;max-width:980px;margin:0 auto}
+.nav .marca{font-weight:700;font-size:1.05rem;letter-spacing:.2px}
+.nav ul{list-style:none;display:flex;gap:22px}
+.nav ul a{color:var(--gris);font-size:.92rem}
+.nav ul a:hover{color:var(--verde-hondo);text-decoration:none}
+@media(max-width:640px){.nav ul{display:none}}
+
+.hero{padding:70px 0 56px}
+.hero .rol{color:var(--verde);font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:1.5px}
+.hero h1{font-size:2.7rem;line-height:1.15;margin:12px 0 16px}
+.hero p.intro{font-size:1.15rem;color:var(--gris);max-width:640px}
+.contacto{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.contacto a{
+  background:var(--papel);border:1px solid var(--linea);
+  padding:9px 16px;border-radius:30px;font-size:.9rem;color:var(--tinta);
+}
+.contacto a:hover{border-color:var(--verde);color:var(--verde-hondo);text-decoration:none}
+
+section{padding:52px 0}
+section h2{font-size:1.7rem;margin-bottom:8px}
+section .bajada{color:var(--gris);margin-bottom:34px;max-width:640px}
+.linea-titulo{width:52px;height:4px;background:var(--verde);border-radius:3px;margin-bottom:22px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px}
+.card{
+  background:var(--papel);border:1px solid var(--linea);border-radius:14px;
+  padding:26px;display:flex;flex-direction:column;
+}
+.card .modulo{font-size:.78rem;color:var(--verde);font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+.card h3{font-size:1.2rem;margin:8px 0 10px}
+.card p{color:var(--gris);font-size:.95rem;flex-grow:1}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.tags span{background:var(--arena);border:1px solid var(--linea);color:var(--tinta);font-size:.78rem;padding:4px 10px;border-radius:20px}
+.card .repo{margin-top:16px;font-size:.88rem;font-weight:600}
+
+footer{background:var(--tinta);color:#cfd8d5;padding:40px 0;margin-top:20px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+footer a{color:#8fe0c9}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <span class="marca">Carla Carvallo</span>
+    <ul>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#caso">Caso de estudio</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="hero" id="sobre">
+    <p class="rol">Desarrollo de software · Python</p>
+    <h1>Ingeniera de procesos<br>aprendiendo a construir software</h1>
+    <p class="intro">Soy Carla Carvallo, Ingeniera Civil Industrial con más de 8 años analizando y mejorando procesos. Hoy estoy sumando el lado técnico: desarrollo aplicaciones con Python y Django para transformar esos procesos en soluciones reales. Aquí reúno los proyectos que fui construyendo durante mi formación.</p>
+    <div class="contacto">
+      <a href="mailto:carlha7@gmail.com">✉ carlha7@gmail.com</a>
+      <a href="https://www.linkedin.com/in/carlacarvallo/" target="_blank" rel="noopener">in/carlacarvallo</a>
+      <a href="https://github.com/carlha7" target="_blank" rel="noopener">github.com/carlha7</a>
+      <a href="tel:+56973988300">+56 9 7398 8300</a>
+    </div>
+  </div>
+
+  <section id="proyectos">
+    <div class="linea-titulo"></div>
+    <h2>Proyectos del curso</h2>
+    <p class="bajada">Cada proyecto lo construí desde cero a lo largo de mi formación en desarrollo Python. Van de lo más básico a aplicaciones web completas.</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="modulo">Módulo 4</span>
+        <h3>Gestor Inteligente de Clientes</h3>
+        <p>Plataforma de gestión de clientes hecha con Programación Orientada a Objetos. Maneja distintos tipos de cliente (regular, premium, corporativo), validaciones de datos, persistencia en base de datos y una interfaz de usuario.</p>
+        <div class="tags"><span>Python</span><span>POO</span><span>SQLite</span><span>JSON/CSV</span><span>Tkinter</span></div>
+        <a class="repo" href="https://github.com/carlha7/CARVALLO_CARLA_GESTOR_CLIENTES" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+
+      <div class="card">
+        <span class="modulo">Módulo 6</span>
+        <h3>App web de gestión de tareas</h3>
+        <p>Aplicación web en Django para gestionar proyectos y tareas. Incluye registro e inicio de sesión de usuarios, formularios con validaciones, panel de administración y control de acceso a las vistas.</p>
+        <div class="tags"><span>Django</span><span>Autenticación</span><span>Templates</span><span>Admin</span></div>
+        <a class="repo" href="https://github.com/carlha7/gestor_proyectos" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+
+      <div class="card">
+        <span class="modulo">Módulo 7 - Caso de estudio</span>
+        <h3>Alke Wallet (Django)</h3>
+        <p>Billetera digital que permite gestionar clientes, cuentas y transacciones. Usa el ORM de Django, relaciones entre modelos, migraciones, operaciones CRUD completas y consultas personalizadas. Es mi proyecto más completo.</p>
+        <div class="tags"><span>Django</span><span>ORM</span><span>CRUD</span><span>SQLite</span><span>PostgreSQL</span></div>
+        <a class="repo" href="https://github.com/carlha7/alke-wallet-modulo-7" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+
+      <div class="card">
+        <span class="modulo">Módulo 5</span>
+        <h3>Alke Wallet - Base de datos</h3>
+        <p>Diseño de la base de datos relacional detrás de la billetera: modelo entidad-relación, tablas de usuarios, monedas y transacciones, consultas SQL y aplicación de los principios ACID.</p>
+        <div class="tags"><span>SQL</span><span>Modelo ER</span><span>DDL/DML</span><span>ACID</span></div>
+        <a class="repo" href="https://github.com/carlha7/Alke-Wallet-Carla-Carvallo" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+
+      <div class="card">
+        <span class="modulo">Módulo 3</span>
+        <h3>Sistema de gestión de datos</h3>
+        <p>Mi primer proyecto en Python: un sistema por consola que aplica condicionales, bucles, funciones y estructuras de datos (listas, diccionarios, tuplas y conjuntos), organizado en módulos reutilizables.</p>
+        <div class="tags"><span>Python</span><span>Funciones</span><span>Estructuras de datos</span></div>
+        <a class="repo" href="https://github.com/carlha7/biblioteca-escolar" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<div class="wrap">
+  <section id="caso">
+    <div class="linea-titulo"></div>
+    <h2>Caso de estudio: Alke Wallet</h2>
+    <p class="bajada">El proyecto que mejor refleja mi crecimiento técnico. Lo elegí porque reúne casi todo lo que aprendí en el curso dentro de una sola aplicación web funcional.</p>
+
+    <div class="card" style="gap:18px">
+      <div>
+        <h3 style="color:var(--verde-hondo)">De qué se trata</h3>
+        <p style="color:var(--gris)">Alke Wallet es una billetera digital desarrollada con Django. Permite registrar clientes, crear sus cuentas y registrar transacciones entre usuarios, todo con una base de datos que mantiene la información ordenada y segura.</p>
+      </div>
+      <div>
+        <h3 style="color:var(--verde-hondo)">El desafío principal</h3>
+        <p style="color:var(--gris)">Pasar de escribir scripts sueltos a construir una aplicación web completa. Tenía que lograr que los modelos, las relaciones entre tablas, las migraciones y las vistas trabajaran juntos sin romperse, y además cuidar la seguridad de los formularios.</p>
+      </div>
+      <div>
+        <h3 style="color:var(--verde-hondo)">La solución que propuse</h3>
+        <p style="color:var(--gris)">Modelé los datos con tres entidades relacionadas (Cliente, Cuenta y Transacción) usando el ORM de Django, apliqué migraciones para reflejar esos modelos en la base de datos, y armé vistas CRUD para crear, ver, editar y eliminar registros. Sumé el panel de administración, el sistema de login y consultas personalizadas para obtener información específica.</p>
+      </div>
+      <div>
+        <h3 style="color:var(--verde-hondo)">Herramientas que usé</h3>
+        <p style="color:var(--gris)">Python y Django como base, SQLite para el desarrollo (con PostgreSQL previsto para producción), el ORM y las migraciones de Django, el panel de administración, Git y GitHub para el control de versiones, y Visual Studio Code como editor.</p>
+      </div>
+      <div>
+        <h3 style="color:var(--verde-hondo)">Lo que aprendí</h3>
+        <p style="color:var(--gris)">Entendí cómo piensa un framework web: separar los datos, la lógica y las vistas. Aprendí a confiar en las migraciones para no perder información, a proteger los formularios contra ataques y a apoyarme en las herramientas que Django ya trae en lugar de reinventar todo.</p>
+      </div>
+      <div>
+        <h3 style="color:var(--verde-hondo)">Impacto medible</h3>
+        <p style="color:var(--gris)">La aplicación pasa sus 12 pruebas automatizadas y el comando de verificación de Django no reporta problemas. El uso del panel de administración me ahorró tener que programar pantallas de gestión desde cero, y las migraciones dejaron un historial ordenado de cada cambio en la base de datos.</p>
+      </div>
+      <div>
+        <h3 style="color:var(--verde-hondo)">Habilidades técnicas aplicadas</h3>
+        <p style="color:var(--gris)">Modelado de datos con ORM, relaciones entre tablas, migraciones, operaciones CRUD, consultas con filtros y SQL, seguridad de formularios (CSRF), autenticación de usuarios, pruebas unitarias y control de versiones con Git.</p>
+      </div>
+      <div>
+        <h3 style="color:var(--verde-hondo)">Por qué elegí este proyecto</h3>
+        <p style="color:var(--gris)">Porque marca el momento en que dejo de resolver ejercicios aislados y logro construir algo parecido a un producto real. Además conecta con mi experiencia previa analizando procesos y sistemas comerciales: ahora puedo aportar también desde el lado del desarrollo.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer id="contacto">
+  <div class="wrap">
+    <div>
+      <strong>Carla Carvallo Martínez</strong><br>
+      Santiago de Chile · Desarrollo Python
+    </div>
+    <div>
+      <a href="mailto:carlha7@gmail.com">carlha7@gmail.com</a> &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/carlacarvallo/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp;
+      <a href="https://github.com/carlha7" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
